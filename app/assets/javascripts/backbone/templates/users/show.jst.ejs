@@ -1,13 +1,14 @@
-<div class="row">
-  <label>Message</label>
-  <textarea class="message" name="message"><%= this.model.get("message") %></textarea>
-</div>
-<div class="row">
-  <label>Shift</label>
-  <input type="text" class="shift" name="shift" value="<%= this.model.get("shift") %>"/>
-</div>
-<hr.>
-<div class="row">
-  <label>Output</label>
-  <p class="caesar_cipher"><%= this.model.get("caesar_cipher") %></p>
-</div>
+<form>
+	<div class="form-group">
+	  <label>Message</label>
+	  <textarea class="message form-control" name="message"><%= this.model.get("message") %></textarea>
+	</div>
+	<div class="form-group">
+	  <label>Shift</label>
+	  <input type="text" class="shift form-control" name="shift" value="<%= this.model.get("shift") %>"/>
+	</div>
+	<div class="form-group">
+	  <label>Output:</label>
+	  <div class="caesar_cipher"><%= this.model.get("caesar_cipher") %></div>
+	</div>
+</form>

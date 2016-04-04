@@ -35,6 +35,8 @@ gem 'stringex' # pretty urls
 gem 'pg'
 gem 'simple_form'
 gem 'rails-backbone'
+gem 'bootstrap3-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

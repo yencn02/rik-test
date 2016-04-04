@@ -1,3 +1,19 @@
 // Place all the styles related to the Greetings controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.content-body{
+  margin-top: 60px;
+  h1{
+    margin-bottom: 40px;
+  }
+}
+.caesar_cipher{
+  margin-right: 0;
+  margin-left: 0;
+  background-color: #fff;
+  border: solid 1px #ddd;
+  border-radius: 5px;
+  min-height: 50px;
+  padding: 10px;
+}
