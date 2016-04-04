@@ -1,1 +1,4 @@
-<% form_for @user %>
+<%= simple_form_for @user do |f| %>
+  <%= f.input :username %>
+  <%= f.submit 'Create', :class => 'button' %>
+<% end %>

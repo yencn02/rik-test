@@ -1,0 +1,11 @@
+<h1> Greeting, <%= @user.username %>
+<div id="caesar_cipher"></div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var user = JSON.parse("<%= escape_javascript(@user.to_json).html_safe %>");	
+		App.user = new App.Models.User(user)
+		App.view = new App.Views.Users.Show(App.user);
+    App.view.render()
+    App.view.bindEvents()
+	})
+</script>
