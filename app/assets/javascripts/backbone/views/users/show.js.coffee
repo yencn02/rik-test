@@ -35,6 +35,4 @@ class App.Views.Users.Show extends Backbone.View
       @model.set({message: message, shift: shift})
       @model.save null,
         success: (obj)->
-          self.render()
-
-
+          $('.caesar_cipher').text(obj.get('caesar_cipher'))
