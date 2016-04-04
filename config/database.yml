@@ -1,0 +1,19 @@
+default: &default
+  encoding: unicode
+  adapter: postgresql
+  username: postgres
+  port: 5432
+  host: localhost
+  password: postgres
+
+development:
+  <<: *default
+  database: rik_development
+
+test:
+  <<: *default
+  database: rik_test
+
+production:
+  <<: *default
+  database: rik_production
